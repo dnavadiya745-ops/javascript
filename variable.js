@@ -30,7 +30,7 @@
 // }
 // function abcd() {
 //     var e = 30;   // functional scope
-//     console.log("funmctioal scope " + e);
+//     console.log("functioal scope " + e);
 // }
 // abcd();
 // console.log(e);
@@ -44,7 +44,7 @@
 // }
 // function abcd() {
 //     let r = 30;   // functional scope
-//     console.log("funmctioal scope " + r);
+//     console.log("functioal scope " + r);
 // }
 // abcd();
 // console.log(r);
@@ -95,4 +95,4 @@
 // }
 // console.log("Outside:", a);
 
-const person = {name: "demo"}; 
+// const person = {name: "demo"}; 
