@@ -2,7 +2,7 @@
 
 //1.Primitive Data Types
 //copy --> real value
-let a = 25;
+let a = 5;
 let b = a ;
 //Types : String , Number , Boolean ,Null ,Underfined .Symbol ,bigint
 
@@ -13,81 +13,83 @@ let b = a ;
  let e = d ;
  //Types : arrys[], Objects{}, fuctions()
 
- // <------------Primitive Data Type ----------------------->
-//Types : String , Number , Boolean ,Null ,Underfined .Symbol ,bigint
-// string
-// '' - single quotes
-// "" - Double quotes
-// `` - backticks
-let d1 = "name";
-d2 = "username";
-d2 = `firstname`;
+// <-----Primitive Data Types---->
+// types: string, number, boolean, null, undefined, symbol,
 
-//number
-let e1 = 12;
-e1 = 12.25;
-e1 = -25;
+// string:
+// '' single quotes
+// ""- dobule quoutes
 
-//boolean
-let f = true;
-f = false;
+//backticks
+let f = "name";
+f = "username";
+f = `firstname`;
 
-//null
+// number:
+let g = 12;
+g = 12.25;
+g = -25;
+
+// boolean:
+let h = true;
+h = false;
+
+// null:
 // you give a value
-let g = null;
+let i = null;
+// undefined:
+// you don't give a value, by defualt value
+let j;
 
-//undefine
-// you dont give a value , by default value
-let h;
-
-//symbol
-//unique immutable value
+// symbol:
+// unique immutably value:
 let u1 = Symbol("uid");
-let u2 =  Symbol("uid");
-//check u1===u2
-let obj = { uid:1, name: "test", email:"test@test.com"} ;
+let u2 = Symbol("uid");
+// check u1===u2
+let obj = { uid: 1, name: "test", email:"test@test.com" };
 let u3 = "uid";
 let u4 = Symbol("uid");
-//obj[u3] = "001";
+// obj[u3] = "001";
 
-//bigint
-// check range of number , Number.Max_SAFE_INTEGER
-let number = 30188954878585;
+// bigint:
+// check range of number: Number.Max_SAFE_INTEGER
+let number = 9007199254740991;
 number = number + 6;
-let num2 = 458622455212323n;
-num2 + 3n;
+let num2 = 900719925470991n;
+num2 + 4n;
 
-// <-----------Non-primitive  Data Types--------->
-//types arrry[] , object{},function()
-let temp_array = ["user1","user2","user3"];
-let temp_obj = {name : "test", age :9,phone_number:8952165841456};
-let profiles =[
-    { name: "test1", age: 10, phone_number:7895814552521},
-    { name: "test2", age: 20, phone_number:78955894552521},
-    { name: "test3", age: 30, phone_number:78955564552521}
+// <---Non-Primitive Data Types---->
+// types: arrays [], objects {}, functoins ()
+let temp_array = ["user1", "user2", "user3"];
+let temp_obj = { name: "test", age: 9, phone_number:
+558998554 };
+let profiles = [
+{ name: "test1", age: 10, phone_number: 98989775},
+{ name: "test2", age: 15, phone_number: 9898889775},
+{ name: "test3", age: 11, phone_number: 9898975575},
 ];
-function name(params){}
+function name(params) {}
 
-//dynamic typing
-let u_name = "username";
-u_name = 123;
-u_name = {};
+// Dynamic Typing
+let u_name = "username"; // string
+u_name = 123; // number
+u_name = {}; // object
+// javascript --> typescript(ts)
+// typeof quirks
+// typeof 12
+// check type of variable use --> ex. typeof NaN, typeof null, 1 + "1", 1 == "1", 1 === "1"
+// why typeof NaN -> number
+// NaN is a failed number oprations that why that type is
+number
+// ex. "hello" 5--> NaN
 
-//typeof quirks
-//typeof 12
-//check type of variable use --> ex.typeof NaN ,typeof null, 1 + "1", 1== "1", 1 === "1"
-//why typeof NaN --> number
-//NaN is a failed number Operation that why that type is number 
-// ex ."hello" - 5 -->NaN
-
-
-//type coeration
-// "5" + 1 // + --> value add and coeration(Mix)
-// "5" - 1
-
-//truthy vs falsy values
-// 0, false, "", null, undefined, NaN, document.all, -- false
-//ex. !!0 -- check value is true and false
-//ex. if(null){}, js convert it into false
-//ex. if(-1){}, js convert it into true
-// all -->true
+// type coeration
+// "5" + 1 //+--> Value Add and Coeration (Mix)
+// "5" 1
+// Truthy vs Falsy Values
+// 0, false, "", null, undefined, NaN, documnet.all,
+false
+// ex. !10 check value is true and false
+// ex. if(null){}, js convert it into false
+// ex. if(-1){}, js convert it into true
+// all --> true
