@@ -103,9 +103,3 @@
 // typeof --> premitive data type mate use karvo
 // instanceof --> refrence data type mate use karvo
 
-let count = 6;
-if(--count === 5){   
-console.log("Matched");
-}else{
-    console.log("Not Matched"); 
-}
