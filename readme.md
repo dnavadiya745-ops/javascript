@@ -225,3 +225,68 @@ console.log("Matched");
 }</p>
 <p>Answer : Matched</p>
 </div>
+
+<div>
+<h1>Example 1 :</h1>
+<p>let x = 2;</p>
+<p>switch(x){
+    case 2:
+    console.log("Two");
+    case 3:
+    console.log("Three");
+}</P>
+<p>Answer : Two , Three</p>
+<div>
+ 
+<div>
+<h1>Example 2 :</h1>
+<p>Write a function getGrade(score) that:</p>
+<p> Takes A student's score as input (0 to 100)</P>
+<p>Returns the grade based on below logic:</P>
+<p>90-100 A+</P>
+<p>80-89 A</P>
+<p>70-79 B</P>
+<p>60-69 C</P>
+<p>33-59 D</P>
+<p>0-32 Fail</P>
+<p>Anything Else Invalid Marks</P>
+<p>Answer :
+       function score(value) {
+   if (value >= 90 && value <= 100) {
+      return "A";
+   } else if (value >= 80 && value <= 90) {
+      return "B";
+   } else if (value >= 70 && value <= 80) {
+      return "C";
+   } else if (value >= 60 && value <= 70) {
+      return "D";
+   }  else if (value >= 33 && value <= 60) {
+      return "E";
+   } else if (value >= 0 && value <= 33) {
+      return "Fail";
+   }  
+   else {
+      return "Anything Else Invalid Marks";
+   }
+}
+   </p>
+<div>
+ 
+<div>
+<h1>Example 3 :</h1>
+<p>Rock-Paper-Scissors:</p>
+<p>rock - scissors --> rock</P>
+<p>paper - rock --> paper</P>
+<p>scissors - paper --> scissors</P>
+<p>Answer : 
+   function rps1(user, computer) {
+   if(user === computer ) return "It's a Tie!!";
+    else if(
+      (user === "rock" && computer === "scissor")  ||
+      (user === "paper" && computer === "rock")  ||
+      (user === "scissor" && computer === "paper")  
+    ) return "User Wins!!"
+     else return "Computer Wins!!"
+}
+</p>
+<div>
