@@ -290,3 +290,198 @@ console.log("Matched");
 }
 </p>
 <div>
+
+<div>
+<h1>Example 1:</h1>
+<p>Print number from 1 to 10 using a for loop.</p>
+<p>Answer : 
+      for (let i = 1; i <= 10; i++) {
+    console.log(i)
+}
+      </p>
+</div>
+ 
+<div>
+<h1>Example 2:</h1>
+<p>Print number from 10 to 1 using while loop.</p>
+<p>Answer : 
+       for (let j = 10; j >= 1; j--) {
+    console.log(j)
+}
+</p>
+</div>
+ 
+<div>
+<h1>Example 3:</h1>
+<p>Print even numbers from 1 to 20 using for loop.</p>
+<p>for(let i=1; i<=20; i++){
+    if(i%2 ===0){
+    console.log(i);
+    }
+}</p>
+<p>Answer : 2 4 6 8 10 12 14 16 18 20 </p>
+</div>
+ 
+<div>
+<h1>Example 4:</h1>
+<p>Print odd numbers from 1 to 15 using while loop.</p>
+<p>let i= 1;</p>
+<p>while(i<=15){
+    if(i%2 !==0){ // or (i%2 ===1)
+    console.log(i);
+    }
+    i++;
+}</p>
+<p>Answer : 1 3 5 7 9 11 13 15</p>
+</div>
+ 
+<div>
+<h1>Example 5:</h1>
+<p>Print the multiplication table of 5.</p>
+<p>
+for(let i=1; i<=10; i++){
+    console.log(`5 x ${i} = ${5*i}`);
+}
+</p>
+<p>Answer :
+           5 x 1 = 5
+           5 x 2 = 10
+           5 x 3 = 15
+           5 x 4 = 20
+           5 x 5 = 25
+           5 x 6 = 30
+           5 x 7 = 35
+           5 x 8 = 40
+           5 x 9 = 45
+           5 x 10 = 50
+ </p>
+</div>
+ 
+<div>
+<h1>Example 6:</h1>
+<p>Find the sum of numbers from 1 to 100 using a loop.</p>
+<p>
+let sum = 0;
+for(let i=1; i<=100; i++){
+    // let sum =0;
+    sum = sum + i;
+    // console.log(sum);
+}
+console.log(sum);
+</p>
+<p>Answer : 5050 </p>
+</div>
+ 
+<div>
+<h1>Example 7:</h1>
+<p>Print all numbers between 1 to 50 that are divisible by 3.</p>
+<p>
+for(let i=1; i<=50; i++){
+    if(i%3 === 0){
+        console.log(i);
+    }
+}
+</p>
+<p>Answer :3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48 </p>
+</div>
+ 
+<div>
+<h1>Example 8:</h1>
+<p>Ask the user for a number and print whether each number from 1 to that number is even or odd.</p>
+<p>
+let num = prompt("give a number");
+for(let i=1; i <=num; i++){
+    if(i%2 ===0){
+        console.log(i, " is even");
+    }else{
+        console.log(i, " is odd");
+    }
+}
+</p>
+<p>Answer : 
+      1 ' is odd'
+      2 ' is even'
+      3 ' is odd'
+      4 ' is even'
+      5 ' is odd'
+      6 ' is even'
+      7 ' is odd'
+      8 ' is even'
+      9 ' is odd'
+      10 ' is even'
+</p>
+</div>
+ 
+<div>
+<h1>Example 9:</h1>
+<p>Count how many numbers between 1 to 100 are divisible by 3 or 5.</p>
+<p>
+for(let i=1; i<=100; i++){
+    if(i%3 ===0 || i%5 ===0){
+        console.log(i);
+    }
+}
+</p>
+<p>Answer :3,5,6,9,10,12,15,18,20,21,24,25,27,30,33,35,36,39,40,42,45,48,50,51,54,55,57,60,63,65,66,69,70,72,75,78,80,81,84,85,87,90,93,95,96,99, 100
+</p>
+</div>
+ 
+<div>
+<h1> (Break and Continue)Example 10:</h1>
+<p>Stop at First Multiple of 7</p>
+<p>Write a Loop from 1 to 100 that:</p>
+<p>Prints Each number</p>
+<p>Stop Completely when it finds the first number divisible by 7</p>
+<p>
+for(let i=1; i<=100; i++){
+    console.log(i);
+    if(i%7 ===0){
+        break;
+    }
+}
+</p>
+<p>Answer : 1 2 3 4 5 6 7 </p>
+</div>
+ 
+<div>
+<h1> (Break and Continue)Example 11:</h1>
+<p>Skip Multiples of 3</p>
+<p>Write a Loop From 1 to 20 that:</p>
+<p>Skip number divisible by 3</p>
+<p>Prints all other numbers</p>
+<p>
+for(let i=1; i<=20; i++){
+    if(i%3 ===0){
+        continue;
+    }
+    console.log(i);
+ 
+}
+</p>
+<p>Answer : 1,2,4,5,7,8,10,11,13,14,16,17,19,20
+</p>
+</div>
+ 
+<div>
+<h1> (Break and Continue)Example 12:</h1>
+<p>Print First 5 Odd Numbers</p>
+<p>Write a loop from 1 to 100 that:</p>
+<p>Prints only 5 odd numbers</p>
+<p>Then stops the loop</p>
+<p>Use Both if, continue and a counter + break</p>
+<p>
+count = 0;
+for(let i =1; i<=100; i++){
+    if(i%2 ===1){
+        count++;
+        console.log(i)
+    }
+    console.log(i);
+    if(count ===5){
+        break;
+    }
+}
+</p>
+<p>Answer : 1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9,9
+ 9</p>
+</div>
