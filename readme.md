@@ -485,3 +485,249 @@ for(let i =1; i<=100; i++){
 <p>Answer : 1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9,9
  9</p>
 </div>
+
+## Function Examples
+<hr>
+<div>
+<h1> Example 1: </h1>
+<p>What's the difference between function declaration and function expression in terms of hoisting?</p>
+<p>Ans : Function Declartion is hoisting thay chhe , Function Expression hoisting thatu nathi</p>
+</div>
+
+<div>
+<h1> Example 2: </h1>
+<p>greet();</p>
+<p>function greet(){
+    console.log("Hello!");
+}</p>
+<p>Ans or Err and Why = Ans : Hello! --> function declartion chhe</p>
+</div>
+
+<div>
+<h1> Example 3: </h1>
+<p>Convert normal function to Arrow Function</p>
+<p>function add(a, b){
+    return a + b;
+}</p>
+<p>Ans And How =
+        let add = (a,b) => {
+            return a+b;
+        }
+        </p>
+</div>
+
+<div>
+<h1> Example 4: </h1>
+<p>Identify what is parms and what is args</p>
+<p>function welcome(name){
+    console.log("Welcome " + name);
+}</p>
+<p>welcome("user");</p>
+<p>Ans and why = welcome user</p>
+<p>welcome : params </p>
+<p>user : args </p>
+</div>
+
+<div>
+<h1> Example 5: </h1>
+<p>how many parameters and args</p>
+<p>function temp (a, b, c){
+    console.log(a,b,c);
+}</p>
+<p>temp(1, 2)</p>
+<p> Ans, Err and Why = Ans : 1, 2, Undefined</p>
+</div>
+
+<div>
+<h1> Example 6: </h1>
+<p>Predict the output</p>
+<p>function temp_user(name = "Guest"){
+    console.log("Hello " + name);
+}</p>
+<p>temp_user();</p>
+<p>Ans, Err and Why = Ans : Hello Guest</p>
+</div>
+
+<div>
+<h1> Example 7: </h1>
+<p>what is ... operator and why use it  in function</p>
+<p>function number(...numbers){
+    console.log(numbers);
+}</p>
+<p>number(1, 2, 3, 4, 5)</p>
+<p>Ans, Err and why = Ans : (5) [1, 2, 3, 4, 5] , aa rest function chhe jenathi output array ma apse lenth 5.</p>
+</div>
+
+<div>
+<h1> Example 8: </h1>
+<p>Use rest Parameters to accept any number of scores and return the total</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    scores.forEach(function(val){
+        total = total + val;
+    });
+    return total;
+}</p>
+<p>calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>let sumtotal = calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>Ans, Err and Why = Ans : 150</p>
+</div>
+
+<div>
+<h1> Example 9: </h1>
+<p>Fix the function using early return</p>
+<p>function checkAge(age){
+    if(age < 18){
+        console.log("Too Young");
+    } else {
+        console.log("Access Granted");
+    }
+}</p>
+<p>Ans And how = Ans:
+  function checkAge(age){
+    if(age < 18){
+        return("Too Young");
+    } else {
+        return("Access Granted");
+    }
+}
+console.lod(checkAge(20));
+     ANS : Access Granted
+</p>
+</div>
+
+<div>
+<h1> Example 10: </h1>
+<p>What is the return value of above function</p>
+<p>function f(){ return;}</p>
+<p>Ans and Why = Ans : NULL</p>
+</div>
+
+
+<div>
+<h1> Example 11: </h1>
+<p>What does is mean when we say "functions are first-class citizens"?</p>
+<p>Ans and Why = Ans : function ne variable tarike store kari shakay , argument ma pass and return kari shaky</p>
+</div>
+
+<div>
+<h1> Example 12: </h1>
+<p>Can You assign a function to a variable and then all it?</p>
+<p>let a = function(){console.log("Hello");}</p>
+<p>a();</p>
+<p>Ans : Hello</p>
+</div>
+
+<div>
+<h1> Example 13: </h1>
+<p>Pass A function into anthor funtion and excute it inside.</p>
+<p>Ans and Why, How</p>
+<p>function abcd(val){val()}</p>
+<p>abcd(function(){ console.log("Hello")})</p>
+<p>Ans : Hello</p>
+</div>
+
+<div>
+<h1> Example 14: </h1>
+<p>What is higer order function?</p>
+<p>Ans and Why = Ans : function ne argument tarike accept kare, return kare</p>
+</div>
+
+<div>
+<h1> Example 16: </h1>
+<p>pure or impure function?</p>
+<p>let a = 5;</p>
+<p>function num(num){
+total += num;
+}
+<p>num(3);</p>
+<p>Ans and Why = Ans : 8</p>
+</div>
+
+<div>
+<h1> Example 17: </h1>
+<p>convert example 16 function into pure function?</p>
+<p>Ans and how = Ans :
+     let a = 5;
+function num(){
+ return a += 3;
+}
+console.log(num);
+</p>
+</div>
+
+<div>
+<h1> Example 18: </h1>
+<p>What is Closure? When is it created?</p>
+<p>Ans and Example
+  closure aeva concept chhe inner function potana outer function na variable ne yaad rakhe chhe outer function excute thy gaya pachi pn 
+
+</p>
+</div>
+
+<div>
+<h1> Example 19: </h1>
+<p>What's logged?</p>
+<p>function outer(){
+    let count = 0;
+    return function(){
+        count++;
+        console.log(count);
+    };
+}</p>
+<p>const counter = outer();</p>
+<p>counter();</p>
+<p>counter();</p>
+<p>Ans, Err and Why = Ans : 1,2</p>
+</div>
+
+<div>
+<h1> Example 20: </h1>
+<p>Convert below function into an IIFE:</p>
+<p>function init(){
+    console.log("Initialized");
+}</p>
+<p>Ans and Why = Ans :
+     (function init(){
+    console.log("Initialized");
+}) ();
+</p>
+</div>
+
+<div>
+<h1> Example 21: </h1>
+<p>What is the use of IIFE? Name one real-world use case.</p>
+<p>let fun=(function(){
+    let score = 0; // this is private variable
+    return{
+        getScore: function(){
+            console.log(score);
+        },
+        setScore: function(val){
+            score = val;
+        }
+    }
+})()</p>
+<p>Ans and Why = Ans : function ne jaldi excute karva , private scope create karva</p>
+</div>
+
+<div>
+<h1> Example 22: </h1>
+<p>What will be the output here and why?</p>
+<p>temp_var();</p>
+<p>var temp_var = function(){
+    console.log("Hello");
+}</p>
+<p>Ans and Why = Ans:  ERROR ,this is expression function(function ne pehla call karavyo chhe )</p>
+</div>
+
+<div>
+<h1> Example 23: </h1>
+<p>What will be the output here and why?</p>
+<p>temp_var();</p>
+<p>function temp_var(){
+    console.log("Hello");
+}</p>
+<p>Ans and Why = Ans : HELLO , this is declartion function (function pehla call karvyo hoy to pn excute thay)</p>
+</div>
+ 
